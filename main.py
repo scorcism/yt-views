@@ -20,7 +20,7 @@ def plays(count):
     # change the driver PATH
     PATH = "C:\Program Files (x86)\chromedriver.exe"
     driver = webdriver.Chrome(PATH)
-    # change the second index of the below variable accroding ur video length
+    # change the second index of the below variable accroding ur array length
     random_video_index = random.randint(0, 7)
     video_url = video_list[random_video_index]
     driver.get(video_url)
@@ -36,7 +36,7 @@ def plays(count):
 
     
 if __name__=="__main__":
-    # change the variable, for how much time you want to play this series
+    # change the variable for looping the process
     play_for = 2
     for i in range(play_for):
         plays(i)
